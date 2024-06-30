@@ -1,0 +1,233 @@
+@import "styles.css";
+
+.desktop{
+    width: 8em;
+    height: 100vh;
+    position: fixed;
+    background-color: white;
+    box-shadow: 0 0 10px 1px white;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2em 0;
+}
+
+.desktop ul{
+    width: 100%;
+    height: 35%;
+}
+
+.desktop ul li{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.desktop ul li a{
+    width: 75%;
+    height: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(80, 80, 80);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-family: cuatra-light; 
+    font-weight: 600;
+}
+
+.desktop ul li a:hover{
+    color: rgb(0, 0, 0);
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.resume{
+    border: 2px solid rgb(80, 80, 80);
+    border-radius: 5px;
+}
+
+.desktop .resume:hover{
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.nav-links img{
+    width: 1.8em;
+    height: 1.8em;
+    opacity: 0.9;
+}
+
+.nav-links img:hover{
+    opacity: 1;
+}
+
+.desktop .nav-links a:hover{
+    border: 0;
+}
+
+@media only screen and (min-width: 960px) {
+
+    html{
+        font-size: 100%;
+      }
+
+    /* ----Navbar---- */
+    
+    .hamburger{
+        display: none;
+    }
+
+    .desktop{
+        display: flex;
+    }
+
+    /* ----Hero Section---- */
+
+    .hero{
+        width: calc(100% - 8em);
+        margin-left: 8em;
+        height: 100vh; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero-main{
+        text-align: start;
+        margin: 0 5em;
+    }
+
+    .hero-main h1{
+        font-size: 3rem;
+        text-align: start;
+    }
+
+    .hero-main a{
+        font-size: 1rem;
+        padding: 1em 1em;
+        top: 3em;
+    }
+
+    .about{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: calc(100% - 8em);
+        margin-left: 8em;
+        padding-top: 1em;
+        padding-bottom: 4em;
+    }
+
+    /* ----About---- */
+
+    .about h2{
+        font-size: 2.5rem;
+        margin-bottom: 0.8em;
+    }
+
+    .about-main{
+        width: 90%;
+        max-width: 60rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 2em;
+        background-color: #255061;
+        border-radius: 8px;
+        box-shadow: 0 0 10px 1px rgb(255, 255, 255);
+    }
+
+    .about-main p{
+        color: white;
+        line-height: 1.4;
+        margin-top: 1.5em;
+        margin-bottom: 1.5em;
+        font-size: 1.1rem;
+    }
+      
+    .about-main img{
+        width: 50%;
+        border: 2px solid white;
+        border-radius: 5px;
+        padding: 0.5em;
+        box-shadow: 4px 7px 2.5px 1px #ffffff;
+    }
+
+    .about-main .text{
+        width: 47%;
+        text-align: end;
+        font-size: 1.5em;
+    }
+
+    .about .line{
+        display: none;
+    }
+
+    /* ----Projects---- */
+
+    .projects{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: calc(100% - 8em);
+        margin-left: 8em;
+        padding-top: 10em;
+        padding-bottom: 15em;
+    }
+
+    .projects h2{
+        font-size: 2.5rem;
+        margin-top: 1em;
+    }
+
+    .projects-main{
+        width: 90%;
+        max-width: 60rem;
+        margin-bottom: 1em;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .contents{
+        width: 30%;
+        display: inline-block;
+        transition: 0.5s;
+    }
+
+    .contents:hover{
+        transform: scale(1.1)
+    }
+
+    .contents .text h3{
+        font-size: 1.2rem;
+    }
+
+    .contents .text p{
+        font-size: 1rem;
+    }
+    
+    /* ----Footer---- */
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: calc(100% - 8em);
+        margin-left: 8em;
+        padding-top: 3em;
+    }
+
+    footer .form{
+        width: 70%;
+        max-width: 40rem;
+        
+    }
+    footer .form .button{      
+        width: 15%;
+        height: 2.5em;
+        margin-top: 1em;
+        
+    } 
+}

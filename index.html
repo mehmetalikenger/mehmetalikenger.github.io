@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/desktop.css">
+    <title>Mehmet Ali Kenger</title>
+</head>
+<body>
+    <nav class="hamburger">
+        <ul>
+            <a href="">
+                <div class="line line1"></div>
+                <div class="line line2"></div>
+                <div class="line line3"></div>
+                <div class="line line4"></div>
+            </a>
+        </ul>
+    </nav>
+    <nav class="desktop">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a class="resume" href="resume.html">Resume</a></li>
+        </ul>
+        <ul class="nav-links">
+            <li><a target="_blank" href="https://github.com/mehmetalikenger"><img src="images/github-logo.png" alt="github-logo"></a></li>
+            <li><a target="_blank" href="https://www.linkedin.com/in/mehmet-ali-kenger-954b031b5/"><img src="images/linkedin.png" alt="linkedin-logo"></a></li>
+            <li><a target="_blank" href="https://medium.com/@kengermehmetali"><img src="images/medium.png" alt="medium-logo"></a></li>
+            <li><a target="_blank" href="https://twitter.com/mehmetalikenger"><img src="images/twitter.png" alt="twitter-logo"></a></li>
+        </ul>
+    </nav>
+    <section id="home" class="hero">
+        <div class="hero-main">
+            <h1><span class="white">HI,</span></h1>
+            <h1>I'M MEHMET ALI,</h1>
+            <h1>I'M A <span class="white">COMPUTER ENGINEERING</span> STUDENT.</h1>
+            <a href="#projects">My Projects</a>
+        </div>
+    </section>   
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <div class="line"></div>
+        <div class="about-main">
+            <img class = "rounded" src="images/foto.jpg" alt="mehmet-ali-kenger-picture">
+            <div class="text">
+                <p>Hi, I’m Mehmet Ali. I’m studying computer engineering at İzmir Bakırçay University. 
+                    I enjoy getting new information about computers and build programms that lives on them. 
+                    I am currently getting  OOP, DBMS and web programming classes at college. 
+                    I am also doing reserch about data science to be a data scientist in the future.</p>           
+            </div>
+        </div>
+        <div class="line"></div>
+    </section>
+    <section id="projects" class= "projects">
+        <h2>Projects</h2>
+        <div class="projects-main">
+            <div class="contents content-1">           
+                <div class="text">  
+                    <h3>Csv to Json</h3>
+                    <p>This program converts csv file to json file. I built this data converter with C. </p>
+                    <div class="button"><a href="https://github.com/mehmetalikenger/csv2json" target="_blank"><img src="images/github-logo.png" alt="github-logo"></a></div>
+                </div>
+            </div>
+            <div class="contents content-2">         
+                <div class="text">
+                    <h3>Website</h3>
+                    <p>The website that you are using right now. It is completely responsive. I built it with html and css. I didn't use javascript or libraries like Bootstrap.</p>
+                    <div class="button"><a href="https://github.com/mehmetalikenger/Website" target="_blank"><img src="images/github-logo.png" alt="github-logo"></a></div>
+                </div>
+            </div>
+            <div class="contents content-3">        
+                <div class="text">
+                    <h3>Pac-Man</h3>
+                    <p>This Pac-Man game was my programming class project. It doesn't look good but it runs fine.</p>
+                    <div class="button"><a href="https://github.com/mehmetalikenger/Pac-Man" target="_blank"><img src="images/github-logo.png" alt="github-logo"></a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div id="contact" class="form">
+            <form action="index.html">
+                <table style="width:100%">
+                    <tr>
+                        <td><label for="fname">First Name :</label></td>
+                        <td><input type="text" id="fname" name="fname" value="" maxlength="30" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="fname">Last Name :</label></td>
+                        <td><input type="text" id="fname" name="fname" value="" maxlength="30" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="fname">Phone Number :</label></td>
+                        <td><input type="phone" id="fname" name="fname" value="" maxlength="11"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="fname">Email :</label></td>
+                        <td><input type="email" id="fname" name="fname" value="" maxlength="50" required></td>
+                    </tr>
+                  </table>
+                <textarea name="comment" form="usrform" style="resize:none" maxlength="300" required>Your message...</textarea>
+                <input class="button" type="submit" value="Send">
+              </form>            
+        </div>
+        <div class="theEnd">
+            <h3>© Copyright 2022. Made by Mehmet Ali Kenger</h3>
+        </div>
+    </footer>
+</body>
+</html>

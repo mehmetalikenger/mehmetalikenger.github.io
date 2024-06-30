@@ -1,0 +1,57 @@
+@import "styles.css";
+@import "desktop.css";
+
+body{
+    background-color: black;
+}
+
+.resume-cont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    margin-bottom: 5em;
+    padding: 5em 1.5em;
+}
+
+.head{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.head h1{
+    color: #0a2c38;
+    font-size: 2.2rem;
+    margin: 0 1em;
+}
+
+.head svg{
+    box-shadow: 0 0 10px 1px #ffffff;
+    border-radius: 5px;
+}
+
+.resume-main{
+    margin-top: 3em;
+    color: white;
+    line-height: 1.4;
+}
+
+.resume-main h2{
+    font-size: 1rem;
+}
+
+.resume-main p{
+}
+
+.resume-main td{
+    padding: 0.5em 0.7em;
+    border: 1px solid white;
+}
+
+@media only screen and (min-width: 960px) {
+    .resume-cont{
+        margin-left: 12em;
+        margin-right: 4em;
+    }
+}
